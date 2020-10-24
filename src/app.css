@@ -5,7 +5,7 @@
 }
 
 :root {
-  --bg-primary: rgb(48, 118, 209);
+  --bg-primary: #d8d4d4;
 }
 
 html {
@@ -13,10 +13,17 @@ html {
 }
 
 body {
-  margin: 0;
-  background: rgb(18, 27, 27);
+  background: var(--bg-primary);
 }
-
+.main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border-radius: 27px;
+  background: linear-gradient(145deg, #c2bfbf, #e7e3e3);
+  box-shadow: 10px 10px 20px #827f7f, -10px -10px 20px #ffffff;
+}
 .bg-primary {
   background: var(--bg-primary);
 }
