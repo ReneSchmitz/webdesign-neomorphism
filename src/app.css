@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+ 
   border-radius: 27px;
   background: linear-gradient(145deg, #c2bfbf, #e7e3e3);
   box-shadow: 10px 10px 20px #827f7f, -10px -10px 20px #ffffff;
