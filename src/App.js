@@ -1,24 +1,20 @@
 import "./app.css";
-import Button from "./components/Button";
 import Header from "./components/Header";
-import { createElement, styled } from "./utils/elements";
-
-const PrimaryButton = styled(Button, "bg-primary");
+import createSecButton from "./components/SecButton";
+import { createElement } from "./utils/elements";
 
 function App() {
   const header = Header();
 
-  const main = createElement("main", {
-    innerText: "👋",
+  const card = createElement("span", {
+    className: "card",
+    innerText: "I'm a card",
   });
+  const secButton = createSecButton();
 
   const container = createElement("div", {
-    children: [
-      header,
-      main,
-      Button({ innerText: "Hello" }),
-      PrimaryButton({ innerText: "World" }),
-    ],
+    className: "main_container",
+    children: [header, card, secButton],
   });
   return container;
 }
